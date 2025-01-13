@@ -260,7 +260,7 @@ Crew.ai is designed to grow with you:
 
 ## 💡 **Benefits Over Alternatives**
 
-Compared to other systems like **AnythingLLM**, this project offers unique advantages:
+Compared to other AI implementation methods, this project offers unique advantages:
 
 1. **Full Local Control**:
    - Unlike systems that require partial or full cloud integration, Ollama ensures that all operations occur on your local machine. Your data never leaves your hardware.
