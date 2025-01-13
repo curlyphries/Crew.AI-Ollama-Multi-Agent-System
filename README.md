@@ -1,10 +1,4 @@
 ```markdown
-# Crew.ai Ollama Multi-Agent System
-
-Welcome to **Crew.ai**, a personal project designed to explore the potential of **local AI systems** running entirely on **your own hardware**. With Crew.ai, you get a **private, powerful, and customizable AI assistant** that works seamlessly without relying on the cloud. This project is my journey into building a **multi-agent AI system**—a network of specialized assistants that collaborate to handle complex tasks, all while keeping my data secure and under my control.
-
----
-
 ## 🚀 **Project Highlights**
 
 - **Privacy First**: Your data stays on your machine—no external servers, no tracking.
