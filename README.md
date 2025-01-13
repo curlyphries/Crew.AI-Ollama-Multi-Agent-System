@@ -1,4 +1,3 @@
-```markdown
 # Crew.ai Ollama Multi-Agent System
 
 ## 🤖 **Introduction**
