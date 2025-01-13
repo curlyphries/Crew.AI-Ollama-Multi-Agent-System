@@ -48,7 +48,7 @@ Welcome to **Crew.ai**, a personal project designed to explore the potential of 
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/crew-ai.git
+   git clone https://github.com/curlyphries/crew-ai.git
    cd crew-ai
    ```
 
@@ -124,13 +124,6 @@ While this is a personal project, I’d love to hear your thoughts, suggestions,
 ## 📝 **License**
 
 This project is licensed under the **MIT License**. Feel free to use, modify, and build on it, but please provide attribution. See the [LICENSE](LICENSE) file for details.
-
----
-
-## 🌐 **Connect**
-
-- **Project Page**: [GitHub Repository](https://github.com/your-username/crew-ai)
-- **Contact Me**: [Your Email or Profile Link]
 
 ---
 
