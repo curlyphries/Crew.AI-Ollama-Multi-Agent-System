@@ -1,7 +1,3 @@
-Here’s a **README.md** for your GitHub project. It’s succinct, structured, and reflects the personal tone we’ve developed for the **Crew.ai Ollama Multi-Agent System**.
-
----
-
 ```markdown
 # Crew.ai Ollama Multi-Agent System
 
