@@ -1,5 +1,4 @@
 # Ollama-Powered AI System with Crew.ai Extensions
-##  **File Hierarchy**
 
 # File Structure Overview
 
@@ -41,9 +40,7 @@ crew-ai/
 ├── Dockerfile                       # Docker setup for application
 ├── .gitignore                       # Files and directories to ignore in Git
 └── LICENSE                          # License information
-
-
-
+```
 
 ## 🤖 **Introduction**
 
@@ -144,7 +141,7 @@ Ollama uses Docker to run local LLMs. Install Docker if it's not already install
 ```bash
 sudo apt update
 sudo apt install -y docker.io
-```
+
 
 - **Enable Docker to start on boot**:
   ```bash
