@@ -1,26 +1,44 @@
 # Ollama-Powered AI System with Crew.ai Extensions
-
+##  **File Hierarchy**
 crew-ai/
-├── agents/
+├── agents/                         # Specialized agents for handling specific tasks
 │   ├── __init__.py
-│   ├── ollama_agent.py
-│   ├── search_agent.py
-│   ├── file_agent.py
-│   ├── data_analysis_agent.py
-│   ├── task_management_agent.py
-│   └── email_management_agent.py
-├── config/
+│   ├── ollama_agent.py             # Handles Ollama model queries
+│   ├── search_agent.py             # Handles search-related tasks
+│   ├── file_agent.py               # File read/write operations
+│   ├── data_analysis_agent.py      # Data processing and analytics
+│   ├── task_management_agent.py    # Task organization and coordination
+│   ├── email_management_agent.py   # Email-specific tasks
+│   └── templates/                  # Reusable templates for agents
+│       ├── __init__.py
+│       └── base_agent.py           # Base class for all agents
+├── config/                         # Configuration files and settings
 │   ├── __init__.py
-│   ├── multi_agent_config.yaml
-│   └── settings.py
-├── core/
+│   ├── multi_agent_config.yaml     # Agent orchestration and settings
+│   ├── settings.py                 # Static application settings
+│   ├── logging_config.yaml         # Logging settings
+│   └── secrets.env                 # Environment variables (use .env)
+├── core/                           # Core functionality and orchestration
 │   ├── __init__.py
-│   ├── orchestrator.py
-│   ├── memory.py
-│   └── utils.py
-├── main.py
-├── requirements.txt
-└── README.md
+│   ├── orchestrator.py             # Manages and routes requests to agents
+│   ├── memory.py                   # Handles memory store (vector DB, etc.)
+│   ├── task_scheduler.py           # Schedules multi-agent workflows
+│   └── utils.py                    # Helper functions and shared utilities
+├── tests/                          # Unit and integration tests
+│   ├── __init__.py
+│   ├── test_agents.py              # Tests for individual agents
+│   ├── test_orchestrator.py        # Tests for orchestrator logic
+│   └── test_memory.py              # Tests for memory handling
+├── docs/                           # Documentation and setup guides
+│   ├── README.md                   # Project overview
+│   ├── INSTALL.md                  # Installation instructions
+│   └── CONTRIBUTING.md             # Guidelines for contributors
+├── main.py                         # Application entry point
+├── Dockerfile                      # Docker container setup
+├── requirements.txt                # Python dependencies
+├── .gitignore                      # Git ignored files
+└── LICENSE                         # License information
+
 
 
 ## 🤖 **Introduction**
