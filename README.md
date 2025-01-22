@@ -1,43 +1,47 @@
 # Ollama-Powered AI System with Crew.ai Extensions
 ##  **File Hierarchy**
+
+# File Structure Overview
+
+Below is the refined file structure for the project. This organization improves modularity, maintainability, and scalability.
+
+```plaintext
 crew-ai/
-├── agents/                         # Specialized agents for handling specific tasks
-│   ├── __init__.py
-│   ├── ollama_agent.py             # Handles Ollama model queries
-│   ├── search_agent.py             # Handles search-related tasks
-│   ├── file_agent.py               # File read/write operations
-│   ├── data_analysis_agent.py      # Data processing and analytics
-│   ├── task_management_agent.py    # Task organization and coordination
-│   ├── email_management_agent.py   # Email-specific tasks
-│   └── templates/                  # Reusable templates for agents
-│       ├── __init__.py
-│       └── base_agent.py           # Base class for all agents
-├── config/                         # Configuration files and settings
-│   ├── __init__.py
-│   ├── multi_agent_config.yaml     # Agent orchestration and settings
-│   ├── settings.py                 # Static application settings
-│   ├── logging_config.yaml         # Logging settings
-│   └── secrets.env                 # Environment variables (use .env)
-├── core/                           # Core functionality and orchestration
-│   ├── __init__.py
-│   ├── orchestrator.py             # Manages and routes requests to agents
-│   ├── memory.py                   # Handles memory store (vector DB, etc.)
-│   ├── task_scheduler.py           # Schedules multi-agent workflows
-│   └── utils.py                    # Helper functions and shared utilities
-├── tests/                          # Unit and integration tests
-│   ├── __init__.py
-│   ├── test_agents.py              # Tests for individual agents
-│   ├── test_orchestrator.py        # Tests for orchestrator logic
-│   └── test_memory.py              # Tests for memory handling
-├── docs/                           # Documentation and setup guides
-│   ├── README.md                   # Project overview
-│   ├── INSTALL.md                  # Installation instructions
-│   └── CONTRIBUTING.md             # Guidelines for contributors
-├── main.py                         # Application entry point
-├── Dockerfile                      # Docker container setup
-├── requirements.txt                # Python dependencies
-├── .gitignore                      # Git ignored files
-└── LICENSE                         # License information
+├── src/                             # Main application code
+│   ├── main.py                      # Application entry point
+│   ├── core/                        # Core functionality
+│   │   ├── __init__.py
+│   │   ├── orchestrator.py
+│   │   ├── memory.py
+│   │   └── utils.py
+│   ├── agents/                      # Specialized agents
+│   │   ├── __init__.py
+│   │   ├── ollama_agent.py
+│   │   ├── search_agent.py
+│   │   └── base_agent.py
+│   └── settings/                    # Configuration files
+│       ├── config.yaml              # Multi-agent configuration
+│       ├── secrets.env              # Environment variables
+│       └── logging.yaml             # Logging configuration
+├── scripts/                         # Helper scripts
+│   ├── init_db.py                   # Initialize database
+│   ├── pull_models.sh               # Script to pull models
+│   └── start_service.sh             # Start Ollama service
+├── tests/                           # Tests for application
+│   ├── unit/                        # Unit tests
+│   ├── integration/                 # Integration tests
+│   └── e2e/                         # End-to-end tests
+├── docs/                            # Documentation
+│   ├── installation.md              # Install guides
+│   ├── api_reference.md             # API references
+│   └── usage_tutorials/             # Tutorials
+│       ├── basic_usage.md
+│       └── advanced_workflows.md
+├── requirements.txt                 # Python dependencies
+├── Dockerfile                       # Docker setup for application
+├── .gitignore                       # Files and directories to ignore in Git
+└── LICENSE                          # License information
+
 
 
 
