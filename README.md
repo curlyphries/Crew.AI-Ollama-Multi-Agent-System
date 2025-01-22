@@ -1,5 +1,28 @@
 # Ollama-Powered AI System with Crew.ai Extensions
 
+crew-ai/
+├── agents/
+│   ├── __init__.py
+│   ├── ollama_agent.py
+│   ├── search_agent.py
+│   ├── file_agent.py
+│   ├── data_analysis_agent.py
+│   ├── task_management_agent.py
+│   └── email_management_agent.py
+├── config/
+│   ├── __init__.py
+│   ├── multi_agent_config.yaml
+│   └── settings.py
+├── core/
+│   ├── __init__.py
+│   ├── orchestrator.py
+│   ├── memory.py
+│   └── utils.py
+├── main.py
+├── requirements.txt
+└── README.md
+
+
 ## 🤖 **Introduction**
 
 Welcome to a system designed to bring the power of **local AI** to your hardware, powered by **Ollama** and enhanced by extensions like **Crew.ai**. At its core, this system uses Ollama to run advanced language models such as **Llama 2**, enabling privacy-first, cutting-edge AI functionality on your local machine.
