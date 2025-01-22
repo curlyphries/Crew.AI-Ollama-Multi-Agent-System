@@ -2,7 +2,7 @@
 
 # File Structure Overview
 
-Below is the refined file structure for the project. This organization improves modularity, maintainability, and scalability.
+Below is the refined file structure for the project, designed to enhance modularity, ensure maintainability and support scalability as the system evolves.
 
 ```plaintext
 crew-ai/
