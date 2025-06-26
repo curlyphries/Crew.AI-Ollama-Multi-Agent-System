@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import argparse
+import sys
 
-from agents.browser_reviewer import BrowserReviewer
-from integrations.browserbase_client import BrowserbaseClient
+from .agents.search_agent import SearchAgent
+from .integrations.browserbase_client import BrowserbaseClient
 
 
 def parse_args() -> argparse.Namespace:
@@ -21,8 +22,12 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
     client = BrowserbaseClient(api_key=args.api_key)
-    reviewer = BrowserReviewer(client=client)
-    reviews = reviewer.review_url(args.url)
+    reviewer = SearchAgent(client=client)
+    try:
+        reviews = reviewer.review_url(args.url)
+    except Exception as exc:  # pragma: no cover - entry point errors
+        print(f"Error: {exc}", file=sys.stderr)
+        sys.exit(1)
     for perspective, review in reviews.items():
         print(f"\n[{perspective.upper()}]\n{review}\n")
 

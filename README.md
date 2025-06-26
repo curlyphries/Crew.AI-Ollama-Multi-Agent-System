@@ -6,40 +6,44 @@ Below is the refined file structure for the project, designed to enhance modular
 
 ```plaintext
 crew-ai/
-├── src/                             # Main application code
-│   ├── main.py                      # Application entry point
-│   ├── core/                        # Core functionality
-│   │   ├── __init__.py
-│   │   ├── orchestrator.py
-│   │   ├── memory.py
-│   │   └── utils.py
-│   ├── agents/                      # Specialized agents
+├── src/                     # Application code
+│   ├── __init__.py
+│   ├── orchestrator.py
+│   ├── memory.py
+│   ├── utils.py
+│   ├── main.py              # CLI entry point
+│   ├── agents/
 │   │   ├── __init__.py
 │   │   ├── ollama_agent.py
 │   │   ├── search_agent.py
 │   │   └── base_agent.py
-│   └── settings/                    # Configuration files
-│       ├── config.yaml              # Multi-agent configuration
-│       ├── secrets.env              # Environment variables
-│       └── logging.yaml             # Logging configuration
-├── scripts/                         # Helper scripts
-│   ├── init_db.py                   # Initialize database
-│   ├── pull_models.sh               # Script to pull models
-│   └── start_service.sh             # Start Ollama service
-├── tests/                           # Tests for application
-│   ├── unit/                        # Unit tests
-│   ├── integration/                 # Integration tests
-│   └── e2e/                         # End-to-end tests
-├── docs/                            # Documentation
-│   ├── installation.md              # Install guides
-│   ├── api_reference.md             # API references
-│   └── usage_tutorials/             # Tutorials
+│   ├── integrations/
+│   │   ├── __init__.py
+│   │   └── browserbase_client.py
+│   └── settings/
+│       ├── config.yaml
+│       ├── secrets.env
+│       └── logging.yaml
+├── scripts/                 # Helper scripts
+│   ├── init_db.py
+│   ├── pull_models.sh
+│   └── start_service.sh
+├── tests/                   # Tests for application
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+├── docs/                    # Documentation
+│   ├── installation.md
+│   ├── api_reference.md
+│   └── usage_tutorials/
 │       ├── basic_usage.md
 │       └── advanced_workflows.md
-├── requirements.txt                 # Python dependencies
-├── Dockerfile                       # Docker setup for application
-├── .gitignore                       # Files and directories to ignore in Git
-└── LICENSE                          # License information
+├── requirements.txt         # Python dependencies
+├── Dockerfile               # Docker setup for application
+├── CHANGELOG.md             # Project history
+├── LICENSE                  # License information
+├── README.md                # Project documentation
+└── .gitignore               # Git exclusions
 ```
 
 ## 🤖 **Introduction**
@@ -117,7 +121,7 @@ Crew.ai adds optional structure to organize tasks, but the foundational capabili
 - **Custom Memory Options**: Short-term and long-term context retention.
 - **Self-Reflection**: Agents evaluate their responses for continual improvement.
 ### Browserbase Integration
-This project now includes optional integration with [Browserbase](https://www.browserbase.com), allowing agents to browse web pages using an AI-friendly remote browser. Use `BrowserbaseClient` in `src/integrations` to fetch content and `BrowserReviewer` to generate conservative, liberal, and neutral perspectives.
+This project now includes optional integration with [Browserbase](https://www.browserbase.com), allowing agents to browse web pages using an AI-friendly remote browser. Use `BrowserbaseClient` in `src/integrations` to fetch content and `SearchAgent` to generate conservative, liberal, and neutral perspectives.
 
 
 ---
