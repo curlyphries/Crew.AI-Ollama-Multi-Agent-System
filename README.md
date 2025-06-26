@@ -116,6 +116,9 @@ Crew.ai adds optional structure to organize tasks, but the foundational capabili
 - **Parallel Collaboration**: Agents work together to solve complex problems.
 - **Custom Memory Options**: Short-term and long-term context retention.
 - **Self-Reflection**: Agents evaluate their responses for continual improvement.
+### Browserbase Integration
+This project now includes optional integration with [Browserbase](https://www.browserbase.com), allowing agents to browse web pages using an AI-friendly remote browser. Use `BrowserbaseClient` in `src/integrations` to fetch content and `BrowserReviewer` to generate conservative, liberal, and neutral perspectives.
+
 
 ---
 
