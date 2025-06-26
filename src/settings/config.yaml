@@ -1,0 +1,3 @@
+orchestration:
+  multi_agent: true
+  memory_store: in_memory
